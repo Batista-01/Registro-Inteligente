@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "compilerPath": "C:/esp/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe",
+            "forcedInclude": [
+                "${workspaceFolder}/build/config/sdkconfig.h"
+            ],
+            "includePath": [
+                "${config:idf.espIdfPathWin}/components/**",
+                "${workspaceFolder}/main/**",
+                "${workspaceFolder}/managed_components/**"
+            ],
+            "browse": {
+                "path": [
+                    "${config:idf.espIdfPathWin}/components",
+                    "${workspaceFolder}/main/**",
+                    "${workspaceFolder}/managed_components/**"
+            ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "compilerArgs": [
+                "-DESP_PLATFORM",
+                "-DIDF_VER"
+            ]
+        }
+    ],
+    "version": 4
+}
+ 
